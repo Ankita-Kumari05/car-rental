@@ -1,0 +1,49 @@
+<%-- Shared page top: <head> and navigation bar. Pages set pageTitle and nav before including this file. --%>
+<c:set var="ctx" value="${pageContext.request.contextPath}" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><c:out value="${empty pageTitle ? 'Self-drive car rental' : pageTitle}" /> | Marigold Rentals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="${ctx}/css/style.css">
+</head>
+<body>
+<header class="navbar">
+    <div class="container navbar-inner">
+        <a class="brand" href="${ctx}/">Marigold<span>Rentals</span></a>
+
+        <nav class="nav-links">
+            <c:choose>
+                <c:when test="${sessionScope.user.role == 'ADMIN'}">
+                    <a class="${nav == 'dashboard' ? 'active' : ''}" href="${ctx}/admin/dashboard">Dashboard</a>
+                    <a class="${nav == 'manage-cars' ? 'active' : ''}" href="${ctx}/admin/cars">Manage cars</a>
+                    <a class="${nav == 'manage-bookings' ? 'active' : ''}" href="${ctx}/admin/bookings">Manage bookings</a>
+                </c:when>
+                <c:otherwise>
+                    <a class="${nav == 'home' ? 'active' : ''}" href="${ctx}/">Home</a>
+                    <a class="${nav == 'cars' ? 'active' : ''}" href="${ctx}/cars">Cars</a>
+                    <c:if test="${sessionScope.user.role == 'CUSTOMER'}">
+                        <a class="${nav == 'my-bookings' ? 'active' : ''}" href="${ctx}/my-bookings">My bookings</a>
+                    </c:if>
+                </c:otherwise>
+            </c:choose>
+        </nav>
+
+        <div class="nav-user">
+            <c:choose>
+                <c:when test="${not empty sessionScope.user}">
+                    <span class="hello">Hi, <c:out value="${sessionScope.user.name}" /></span>
+                    <a class="btn btn-sm btn-ghost" href="${ctx}/logout">Log out</a>
+                </c:when>
+                <c:otherwise>
+                    <a class="link" href="${ctx}/login">Log in</a>
+                    <a class="btn btn-sm" href="${ctx}/register">Register</a>
+                </c:otherwise>
+            </c:choose>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,17 @@
+<%-- One car card. Used inside a <c:forEach var="car"> loop. --%>
+<article class="car-card">
+    <div class="car-media"><%@ include file="/WEB-INF/views/car-image.jspf" %></div>
+    <div class="car-body">
+        <h3><c:out value="${car.name}" /></h3>
+        <div class="specs">
+            <span><c:out value="${car.type}" /></span>
+            <span><c:out value="${car.fuel}" /></span>
+            <span><c:out value="${car.transmission}" /></span>
+            <span>${car.seats} seats</span>
+        </div>
+        <div class="car-foot">
+            <p class="price"><strong>&#8377;<fmt:formatNumber value="${car.pricePerDay}" pattern="#,##0" /></strong> / day</p>
+            <a class="btn btn-sm" href="${ctx}/car-details?id=${car.id}">View details</a>
+        </div>
+    </div>
+</article>

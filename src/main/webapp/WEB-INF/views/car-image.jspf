@@ -1,0 +1,19 @@
+<%-- Shows the car photo if the admin entered an image file name, otherwise draws a simple car in the car's colour.
+     Expects a variable named "car" (a Car object). --%>
+<c:choose>
+    <c:when test="${not empty car.image}">
+        <img src="${ctx}/images/<c:out value='${car.image}' />" alt="<c:out value='${car.name}' />">
+    </c:when>
+    <c:otherwise>
+        <svg viewBox="0 0 240 100" role="img" aria-label="<c:out value='${car.name}' />">
+            <path d="M10 70 L10 58 Q10 52 18 50 L52 44 L78 22 Q82 18 90 18 L150 18 Q160 18 166 24 L186 44 L218 50 Q230 52 230 62 L230 70 Q230 74 226 74 L14 74 Q10 74 10 70 Z"
+                  fill="<c:out value='${car.color}' />" stroke="#0B1F3A" stroke-opacity=".35" stroke-width="1.5" />
+            <polygon points="68,43 88,26 126,26 126,43" fill="#DCE8F6" />
+            <polygon points="133,26 152,26 174,43 133,43" fill="#DCE8F6" />
+            <circle cx="60" cy="76" r="14" fill="#0B1F3A" />
+            <circle cx="60" cy="76" r="6" fill="#CBD5E1" />
+            <circle cx="182" cy="76" r="14" fill="#0B1F3A" />
+            <circle cx="182" cy="76" r="6" fill="#CBD5E1" />
+        </svg>
+    </c:otherwise>
+</c:choose>

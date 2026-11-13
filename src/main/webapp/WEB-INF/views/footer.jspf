@@ -1,0 +1,7 @@
+<%-- Shared page bottom --%>
+<footer class="footer">
+    <div class="container">Marigold Rentals. College mini project: Car Rental Management System.</div>
+</footer>
+<script src="${ctx}/js/app.js"></script>
+</body>
+</html>
