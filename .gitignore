@@ -1,0 +1,17 @@
+# Environment files
+.env
+.env.*
+*.env
+
+# Build & packaging
+target/
+*.war
+
+# IDE & editors
+.vscode/
+.idea/
+*.class
+
+# OS generated files
+.DS_Store
+Thumbs.db
