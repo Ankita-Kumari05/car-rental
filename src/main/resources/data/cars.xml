@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cars>
+  <car id="C001">
+    <name>Maruti Suzuki Swift</name>
+    <type>Hatchback</type>
+    <fuel>Petrol</fuel>
+    <transmission>Manual</transmission>
+    <seats>5</seats>
+    <pricePerDay>1500</pricePerDay>
+    <color>#B3261E</color>
+    <image></image>
+    <available>true</available>
+    <description>A light, easy-to-park hatchback that suits city errands and weekend drives. Good mileage and low running cost.</description>
+  </car>
+  <car id="C002">
+    <name>Tata Tiago</name>
+    <type>Hatchback</type>
+    <fuel>Petrol</fuel>
+    <transmission>Manual</transmission>
+    <seats>5</seats>
+    <pricePerDay>1300</pricePerDay>
+    <color>#2D5BA6</color>
+    <image></image>
+    <available>true</available>
+    <description>A compact and solid hatchback with a comfortable cabin. The most affordable car in our fleet.</description>
+  </car>
+  <car id="C003">
+    <name>Maruti Suzuki Dzire</name>
+    <type>Sedan</type>
+    <fuel>CNG</fuel>
+    <transmission>Manual</transmission>
+    <seats>5</seats>
+    <pricePerDay>1800</pricePerDay>
+    <color>#C9CED6</color>
+    <image></image>
+    <available>true</available>
+    <description>A practical sedan with a large boot and a CNG engine, which keeps fuel cost low on long drives.</description>
+  </car>
+  <car id="C004">
+    <name>Tata Nexon</name>
+    <type>SUV</type>
+    <fuel>Diesel</fuel>
+    <transmission>Manual</transmission>
+    <seats>5</seats>
+    <pricePerDay>2500</pricePerDay>
+    <color>#3F6B5B</color>
+    <image></image>
+    <available>true</available>
+    <description>A compact SUV with high ground clearance and a strong safety record. Comfortable on highways and rough roads.</description>
+  </car>
+  <car id="C005">
+    <name>Mahindra Thar</name>
+    <type>SUV</type>
+    <fuel>Diesel</fuel>
+    <transmission>Manual</transmission>
+    <seats>4</seats>
+    <pricePerDay>3500</pricePerDay>
+    <color>#8A4B2A</color>
+    <image></image>
+    <available>true</available>
+    <description>A rugged 4x4 for hill trips and off-road routes. Pick this one when the road is not the main attraction.</description>
+  </car>
+  <car id="C006">
+    <name>Mahindra XUV700</name>
+    <type>SUV</type>
+    <fuel>Diesel</fuel>
+    <transmission>Automatic</transmission>
+    <seats>7</seats>
+    <pricePerDay>4500</pricePerDay>
+    <color>#1F2937</color>
+    <image></image>
+    <available>true</available>
+    <description>A large automatic SUV with three rows of seats and a smooth ride. Suited to family trips and long distances.</description>
+  </car>
+  <car id="C007">
+    <name>Maruti Suzuki Ertiga</name>
+    <type>MUV</type>
+    <fuel>Petrol</fuel>
+    <transmission>Manual</transmission>
+    <seats>7</seats>
+    <pricePerDay>2800</pricePerDay>
+    <color>#8E98A8</color>
+    <image></image>
+    <available>true</available>
+    <description>A seven-seater people carrier with space for luggage. A dependable choice for family outings and group travel.</description>
+  </car>
+  <car id="C008">
+    <name>Tata Tigor EV</name>
+    <type>Sedan</type>
+    <fuel>Electric</fuel>
+    <transmission>Automatic</transmission>
+    <seats>5</seats>
+    <pricePerDay>2200</pricePerDay>
+    <color>#2A7F9E</color>
+    <image></image>
+    <available>false</available>
+    <description>A quiet electric sedan for city use. Currently unavailable while it is being serviced.</description>
+  </car>
+</cars>

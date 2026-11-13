@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookings>
+  <booking id="B1001">
+    <userId>U002</userId>
+    <customerName>Rahul Sharma</customerName>
+    <carId>C001</carId>
+    <carName>Maruti Suzuki Swift</carName>
+    <days>3</days>
+    <pricePerDay>1500</pricePerDay>
+    <totalAmount>4500</totalAmount>
+    <status>Approved</status>
+    <bookingDate>2026-10-20</bookingDate>
+  </booking>
+  <booking id="B1002">
+    <userId>U003</userId>
+    <customerName>Priya Verma</customerName>
+    <carId>C004</carId>
+    <carName>Tata Nexon</carName>
+    <days>5</days>
+    <pricePerDay>2500</pricePerDay>
+    <totalAmount>12500</totalAmount>
+    <status>Pending</status>
+    <bookingDate>2026-10-28</bookingDate>
+  </booking>
+  <booking id="B1003">
+    <userId>U002</userId>
+    <customerName>Rahul Sharma</customerName>
+    <carId>C005</carId>
+    <carName>Mahindra Thar</carName>
+    <days>2</days>
+    <pricePerDay>3500</pricePerDay>
+    <totalAmount>7000</totalAmount>
+    <status>Rejected</status>
+    <bookingDate>2026-10-25</bookingDate>
+  </booking>
+  <booking id="B1004">
+    <userId>U004</userId>
+    <customerName>Amit Singh</customerName>
+    <carId>C007</carId>
+    <carName>Maruti Suzuki Ertiga</carName>
+    <days>4</days>
+    <pricePerDay>2800</pricePerDay>
+    <totalAmount>11200</totalAmount>
+    <status>Pending</status>
+    <bookingDate>2026-10-30</bookingDate>
+  </booking>
+  <booking id="B1005">
+    <userId>U003</userId>
+    <customerName>Priya Verma</customerName>
+    <carId>C003</carId>
+    <carName>Maruti Suzuki Dzire</carName>
+    <days>2</days>
+    <pricePerDay>1800</pricePerDay>
+    <totalAmount>3600</totalAmount>
+    <status>Cancelled</status>
+    <bookingDate>2026-10-18</bookingDate>
+  </booking>
+</bookings>

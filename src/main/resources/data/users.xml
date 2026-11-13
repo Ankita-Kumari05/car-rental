@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+  <user id="U001" role="ADMIN">
+    <name>Site Admin</name>
+    <email>admin@carrental.com</email>
+    <password>admin123</password>
+    <phone>9800000000</phone>
+  </user>
+  <user id="U002" role="CUSTOMER">
+    <name>Rahul Sharma</name>
+    <email>rahul@example.com</email>
+    <password>rahul123</password>
+    <phone>9811111111</phone>
+  </user>
+  <user id="U003" role="CUSTOMER">
+    <name>Priya Verma</name>
+    <email>priya@example.com</email>
+    <password>priya123</password>
+    <phone>9822222222</phone>
+  </user>
+  <user id="U004" role="CUSTOMER">
+    <name>Amit Singh</name>
+    <email>amit@example.com</email>
+    <password>amit123</password>
+    <phone>9833333333</phone>
+  </user>
+</users>
