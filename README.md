@@ -128,15 +128,6 @@ The pages inside `WEB-INF/views` can only be reached through a servlet, so a pag
 | MVC | Model = `model` + `dao`, View = JSPs, Controller = servlets |
 | Thread safety | DAOs lock on `XMLUtil.LOCK` so two requests never write at once |
 
-## Likely viva questions
-
-- **Why redirect after saving a booking?** So that refreshing the confirmation page does not create the booking again (Post/Redirect/Get).
-- **Forward vs redirect?** Forward is handled inside the server and keeps request attributes. Redirect tells the browser to make a new request.
-- **Why are JSPs inside WEB-INF?** Browsers cannot open them directly. They must go through a servlet that loads the data first.
-- **How do you stop a customer opening admin pages?** `AdminServlet.checkAdmin()` looks at the session user and redirects unless it is an `Admin`.
-- **Why a DAO?** The servlets never read XML. If storage changed to a database, only the DAO classes would change.
-- **Why `synchronized (XMLUtil.LOCK)`?** Tomcat handles many requests on different threads, and two of them must not write the same file at the same time.
-
 ## Notes and limits (it is a college project)
 
 - Passwords are stored as plain text in `users.xml` to keep the code simple. A real system would store hashes.
